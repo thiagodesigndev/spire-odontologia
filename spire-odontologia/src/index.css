@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-mories: "Playfair Display", serif;
+
+  --color-spire-bordeaux: #4e2c33; /* Updated luxury shade */
+  --color-spire-taupe: #aa8976;
+  --color-spire-gold: #d4af37; /* Luxury Metallic Gold */
+  --color-spire-pearl: #ffffff;
+  --color-spire-black: #121212;
+  --background-image-spire-gradient: linear-gradient(180deg, #d4af37 0%, #206600 100%);
+}
+
+@layer base {
+  body {
+    @apply font-montserrat bg-white text-spire-black;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
